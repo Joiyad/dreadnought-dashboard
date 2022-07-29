@@ -1,21 +1,22 @@
 import React from 'react';
 
 const Data = [
-    {id:1, title:"title1", content:"content1", price:"price1", image1:"logo1"},
-    {id:2, title:"title2", content:"content2", price:"price2", image1:"logo2"},
-    {id:3, title:"title3", content:"content3", price:"price3", image1:"logo3"},
+    {id:1, title:"Enroll", content:"completely free to enroll. You will put an effort of 4 to 5 hours per week", price:"$0", image:"/enroll.png"},
+    {id:2, title:"Investment", content:"monetary investment to buy your domain name, website hosting, etc.", price:"$15", image:"/invest.png"},
+    {id:3, title:"Refer", content:"You will get USD $50 for every referral who completes milestones.", price:"$50", image:"/refer.png"},
 ]
 
 const MainDown = () => {
   return (
     <>
-    <div className='flex flex-row gap-x-6 m-auto my-10'>
+    <h2 className='text-2xl text-purple-400 font-semibold mt-8'>Explore</h2>
+    <div className='flex flex-col md:flex-row gap-16 m-auto my-4'>
     {Data.map(({id, title, content, price, image}) => (
-    <div className='w-60 p-4 flex flex-row text-white border-2 border-white border-opacity-20 rounded-md bg-gradient-to-t from-slate-900 to-black'>
+    <div className='w-60 p-4 flex flex-row text-white rounded-md bg-gradient-to-tr from-purple-800 to-violet-600 shadow-lg'>
         <div>
-            <h2 className='text-2xl'>{title}</h2>
-            <p>{content}</p>
-            <p>{price}</p>
+            <h2 className='text-2xl font-semibold'>{title}</h2>
+            <p className='text-gray-200'>{content}</p>
+            <p className='text-pink-400 text-2xl'>{price}</p>
         </div>
         <div>
             <img src={image} alt='logo'/>

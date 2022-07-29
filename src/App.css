@@ -1,4 +1,7 @@
 
 body{
-  background: black;
+  background-image: url('/public/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

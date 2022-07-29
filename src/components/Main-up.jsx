@@ -1,21 +1,21 @@
 import React from 'react';
-
 const Data = [
-    {id:1, title:"title1", content:"content1", price:"price1", image1:"logo1"},
-    {id:2, title:"title2", content:"content2", price:"price2", image1:"logo2"},
-    {id:3, title:"title3", content:"content3", price:"price3", image1:"logo3"},
+    {id:1, title:"Y Combinator Startup School Certification", status:"achieved", image:"./learn.png"},
+    {id:2, title:"Greater than 100 followers on LinkedIn Company PageCourse2", status:"not achieved", image:"./linkedin.png"},
+    {id:3, title:"Greater than 50 followers on Twitter Company Page", status:"achieved", image:"./Twitter.png"},
+    {id:3, title:"AWS Activate Credits", status:"achieved", image:"./aws.png"},
+    {id:3, title:"GCP Startup Credits", status:"achieved", image:"./gcp-icon.png"},
 ]
 
 const MainUp = () => {
   return (
     <>
-    <div className='flex flex-row gap-x-12 mt-20'>
-    {Data.map(({id, title, content, price, image}) => (
-    <div className='w-40 p-4 flex flex-col text-white border-2 border-white border-opacity-20 rounded-md bg-gradient-to-t from-slate-900 to-black'>
-            <img src={image} alt='logo'/>
-            <h2 className='text-2xl'>{title}</h2>
-            <p>{content}</p>
-            <p>{price}</p>
+    <h2 className='text-center text-3xl text-gray-200 font-bold mt-16 mb-6'>Your Milestones</h2>
+    <div className='flex flex-col md:flex-row gap-8 md:gap-x-4'>
+    {Data.map(({id, title, status, image}) => (
+    <div key={id} className='w-40 p-4 flex flex-col items-center text-white rounded-[10px] bg-gradient-to-tr from-purple-400 to-violet-600 shadow-lg'>
+            <img src={image} alt='logo' width="50" height="50"/>
+            <h2 className='text-xs font-semibold'>{title}</h2>
     </div>))}
     </div>
     </>
