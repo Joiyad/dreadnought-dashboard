@@ -8,7 +8,7 @@ import Title from './components/Title';
 function App() {
   return (
     <div>
-      <div className='flex flex-row'>
+      <div className='flex flex-col md:flex-row'>
         <Sidebar />
         <div className='m-auto md:pl-36'>
           <Title />

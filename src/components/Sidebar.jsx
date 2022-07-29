@@ -15,7 +15,7 @@ const Sidebar = () => {
     </div>
 
     {/* full navbar */}
-    <div className="hidden md:pt-16 md:block w-48 fixed h-screen bg-transparent bg-slate-900 bg-opacity-90 hover:transition-all overflow-hidden border-r-2 border-white border-opacity-10 font-semibold" id="menuN" >
+    <div className="hidden md:pt-16 z-20 md:block w-auto md:w-48 fixed h-screen bg-transparent bg-slate-900 bg-opacity-60 hover:transition-all overflow-hidden border-r-2 border-white border-opacity-10 font-semibold" id="menuN" >
       <nav>
         <div className="flex flex-col text-white pl-4 gap-y-8">
           <a href="/0" className="px-4 py-3 bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 hover:rounded-[20px] flex flex-row"><HomeOutlinedIcon className="mr-4" fontSize="medium" /><p>Home</p></a>

@@ -10,7 +10,7 @@ const Benefits = [
 const SidebarR = () => {
   return (
     <div>
-        <div className='hidden md:block h-full bg-gradient-to-t from-slate-900 to-black'>
+        <div className='hidden md:block h-full bg-transparent  bg-opacity-80 bg-slate-900'>
           <h2 className='text-white text-4xl p-8 text-transparent bg-clip-text bg-gradient-to-tr from-blue-800 to-pink-400 font-semibold'>Benefits</h2>
           <div className='p-4 flex flex-col gap-4'>
             {Benefits.map(({id, image, text}) => (

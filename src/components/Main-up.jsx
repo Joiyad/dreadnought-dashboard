@@ -10,7 +10,7 @@ const Data = [
 const MainUp = () => {
   return (
     <>
-    <h2 className='text-center text-3xl text-gray-200 font-bold mt-16 mb-6'>Your Milestones</h2>
+    <h2 className='md:text-center text-3xl text-gray-200 font-bold mt-16 mb-6'>Your Milestones</h2>
     <div className='flex flex-col md:flex-row gap-8 md:gap-x-4'>
     {Data.map(({id, title, status, image}) => (
     <div key={id} className='w-40 p-4 flex flex-col items-center text-white rounded-[10px] bg-gradient-to-tr from-purple-400 to-violet-600 shadow-lg'>
